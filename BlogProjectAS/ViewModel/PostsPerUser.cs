@@ -9,6 +9,7 @@ namespace BlogProjectAS.ViewModel
     public class PostsPerUser
     {
         public ApplicationUser UserObj { get; set; }
+
         public IEnumerable<Post> Posts { get; set; }
     }
 }
