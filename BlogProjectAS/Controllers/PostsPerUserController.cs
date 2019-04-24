@@ -23,11 +23,7 @@ namespace BlogProjectAS.Controllers
 
         private readonly IHostingEnvironment _hostingEnvironment;
 
-        //public HomeController(IHostingEnvironment hostingEnvironment)
-        //{
-        //    _hostingEnvironment = hostingEnvironment;
-        //}
-
+       
         public PostsPerUserController(IRepositoryWrapper repositoryWrapper, IHostingEnvironment hostingEnvironment)
         {
             _repositoryWrapper = repositoryWrapper;

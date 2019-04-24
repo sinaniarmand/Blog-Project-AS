@@ -20,6 +20,7 @@ namespace BlogProjectAS.Controllers
             return View();
         }
 
+        //Create Get
         public IActionResult Create(int postId, string userId)
         {
             if (!User.Identity.IsAuthenticated)

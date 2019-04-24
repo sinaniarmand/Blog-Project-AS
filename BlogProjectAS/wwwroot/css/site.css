@@ -1,4 +1,5 @@
-﻿body {
+﻿body 
+{
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url("../Images/Background.jpg");
@@ -23,7 +24,8 @@ h2 {
 }
 
 /* Carousel */
-.carousel-caption p {
+.carousel-caption p 
+{
     font-size: 20px;
     line-height: 1.4;
 }

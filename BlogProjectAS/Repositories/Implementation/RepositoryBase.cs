@@ -8,6 +8,8 @@ using BlogProjectAS.Repositories;
 
 namespace BlogProjectAS.Repositories.Implementation
 {
+    //abstract class that  generic type T to work with. 
+    // don’t have to specify exact model (class) right now for the RepositoryBase 
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
         protected ApplicationDbContext ApplicationDbContext { get; set; }

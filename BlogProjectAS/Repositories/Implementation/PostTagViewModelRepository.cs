@@ -60,7 +60,7 @@ namespace BlogProjectAS.Repositories.Implementation
                     foreach (var tagItem in postTagElement.tags)
                     {
                         if ((!string.IsNullOrWhiteSpace(titleSearch) && postTagElement.post.Title.ToLower().Contains(titleSearch.ToLower())) ||
-                            (!string.IsNullOrWhiteSpace(tag) && (string.Compare(tagItem.Description, tag) == 0)))
+                            (!string.IsNullOrWhiteSpace(tag.ToLower()) && (string.Compare(tagItem.Description.ToLower(), tag) == 0)))
                         {
                             listOfPostTag.Add(postTagElement);
                         }
